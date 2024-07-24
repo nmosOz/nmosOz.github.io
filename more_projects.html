@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title> More Projects </title>
+<style>
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <strong><h1> Nathan Moses </h1></strong>
+    <h2> Computer Science Portfolio</h2>
+    <p><a href="index.html" > Home </a></p>
+    <p><a href="about.html"> About </a></p>
+    <p><a href="https://www.linkedin.com/in/nathan-moses-52a014214/"> LinkedIn </a> </p>
+    <p><a href="https://github.com/nmosOz?tab=repositories"> Github </a></p>
+    <p><a href="resume.html"> Resume </a></p>
+    <p><a href="more_projects.html" class="active"> More Projects </a></p>
+  </div>
+  
+  <div class="content">
+    <p> This is a collection of projects that I believe are important, but maybe not as important/polished as those on the front page. 
+        These projects may have bugs! </p>
+    <br>
+    <p> Click on the project names to go to the Github repo </p>
+    
+    <br><br><br>
+    <h4><a href="https://github.com/nmosOz/Computer-Networks/tree/main/Assignment1">Throughput and Bandwidth Measurer </a> </h4>
+    <p> This was a project I did when I was first getting into networking with Java. The intended use of the program is to choose 
+        what size packet you want to send over. The options are 8 bytes, 64 bytes, and 512 bytes. To measure round trip time (RTT) 
+        an acknowledgement is needed when the client receives a message from the server. In my program, this acknowledgement is the 
+        message itself. To measure throughput, I would send 1MB of data with the same message sizes. Meaning I would send 16384 8-byte
+        messages, 4096 256-byte messages, and 1024 1024-byte messages. The results were that throughput increased as packet size increased 
+        and RTT increased as the message size increased. All of these messages were encrypted using a shared initial key that was updated 
+        using a custom random number generator every 64 bytes.
+    </p>
+    <p><a href="https://cs.oswego.edu/~nmoses2/CSC445a1.html">Visit the findings here</a></p>
+
+    <br><br>
+
+    <h4><a href="https://github.com/nmosOz/GoServerandAgent"> GoLang Agent and Server </a></h4>
+    <p> This project consists of two separate programs. The Agent is a program designed to run in a Docker Container that by default will 
+        grab the top ten sightings from the Bird Sighting API and send that data to DynamoDB in AWS every hour. The Server program is also 
+        designed to run in a Docker Container, but a separate one from the Agent. This creates a microservice architecture, albeit on a smaller 
+        scale, and allows one program to be running even if the other does not. The Server will fetch all of the information in DynamoDB pertaining 
+        to the information gathered by the Agent and displays information depending on the endpoint that the user has reached. 
+    </p>
+  
+    <br><br>
+
+    <h4> <a href="https://github.com/nmosOz/Computer-Networks"> File Transfer Using Sliding Window Protocol </a></h4>
+    <p> This project is another networking one. This time I implemented a version of TFTP (stands for trivial file transfer protocol) using the 
+        sliding window protocol. I did this by using UDP over Java and measured different sizes of 'window' over different server/client pairs. 
+        I used a file size of 2.3MB. Through testing I found the throughput increased when given greater window sizes.
+    </p>
+    <p><a href="https://cs.oswego.edu/~nmoses2/CSC445a2.html">Visit the findings here</a></p>
+    
+  </div>
+</body>
+
+</html>

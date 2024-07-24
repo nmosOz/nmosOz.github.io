@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title></title>
+</head>
+<body>
+  <div class="header">
+    <strong><h1> Nathan  </h1></strong>
+    <h2> Computer Science Portfolio</h2>
+    <p><a href="index.html" class="active"> Home </a></p>
+    <p><a href="about.html"> About </a></p>
+    <p><a href="https://www.linkedin.com/in/nathan-moses-52a014214/"> LinkedIn </a> </p>
+    <p><a href="https://github.com/nmosOz?tab=repositories"> Github </a></p>
+    <p><a href="resume.html"> Resume </a></p>
+    <p><a href="more_projects.html"> More Projects </a></p>
+  </div>
+  <div class="content">
+    <h1> Project Spotlight </h1>
+    <b> </b>
+    <h3> Fish Camera </h3> 
+    <div class="image-container">
+      <img src="FishCameraSite.jpg" style="max-width: 100%;" alt="Fish Camera Website Homepage">
+    </div>
+    <p> My favorite project I have done (so far). Myself and four others worked on this project throughout the semester.
+        We were tasked with making an application that was to be loaded on a Raspberry Pi hooked up to a video camera and 
+        deployed about a couple hundred feet off shore of Lake Ontario. We had to collaborate with the Biology department
+        to plan out their specific requirements for the application and what could resonably be done in one semester. The 
+        resulting program was one that could correctly identify and track movements, by movements I mean if the fish was moving 
+        to the left, right, towards, or backwards, in specifically Round Gobies which are invasive in the lake. The program was in 2
+        parts, the first part just took a 30-minute video and then sent it to a dedicated server. The other was hosted on that dedicated 
+        server which had a watchdog program that would detect when a new video was sent to it for processing. 
+        Once processed the program would spit out a .csv file containing time, date, direction, and number of fish in the frame. 
+    </p>
+    <br>
+    <p>
+        * I am not sure if I am able to show a demonstration of the program using a video taken in the college, so the video seen 
+        in the link below is a video captured in my fish tank showing what the motion capture side of the program can do. *
+    </p>
+    <b></b>
+    <a href="fishdemo.html"> Click here for a full demonstration video of the project </a>
+
+
+
+    <br><br><br><br>
+
+    <h3> Collaborative Text Editor </h3>
+    <p> This project is exactly what the title sounds like. A simple, collaborative text editor in Java. This was made using Kafka for message transmission.
+        Every user that connects needed to be able to transmit and receive messages (possibly at the same time), which means every user must be both 
+        a Kafka 'producer' and 'consumer'. The user has access to simple text-based actions like adding, removing, and pasting messages at the same time 
+        other users are doing the same thing, all while keeping each user's document's synced. This program does have a few bugs still as we were only given about five 
+        weeks to complete it, but I wanted to show it off as it was a program I really liked working on.
+    </p>
+
+
+    <br><br><br><br>
+
+    <h3> "Paws and Claws" </h3>
+    <div class="image-container2">
+      <img src="PawsAndClawsHomepage.jpg" style="max-width: 100%;" alt="Paws and Claws Homepage">
+    </div>
+    <p> This was a website made for adoption agencies to post 'profiles' of animals they had up for adoption.
+        This class consisted of about 25 people all working in collaboration to make the website over the semester.
+        We were able to pick a different team to determine what part of the website to focus on.
+        I chose to be part of the 'Engine' team. This team was in charge of handling API calls made by the front-end 
+        and storing the data for each animal shelter or pet. In this class we used AGILE development rather than the 
+        traditional waterfall method used in classes. Overall this class taught me how to work in a team and be able to 
+        collaborate with other teams that may not know how our code works.
+    </p>
+    <a href="pawsclawsdemo.html"> Click here for a full demonstration video of the project </a>
+  </div>
+</body>
+
+<footer class="footer">
+  <h3> Contact Information </h3>
+  <p> Email: nathanmoses1228@gmail.com</p>
+</footer>
+
+</html>
