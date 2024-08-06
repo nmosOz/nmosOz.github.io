@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
 body {
-    background: linear-gradient(to bottom, #ffffff, #00171f, #003459, #007ea7, #00a8e8);
+    background: linear-gradient(to bottom, #ffffff, #00171f, #003459, #006e92);
     height: 100vh;
     margin: 0;
     display: flex;
@@ -100,3 +100,5 @@ video{
   width: 30%;
   margin-left: 20px;
 }
+
+
